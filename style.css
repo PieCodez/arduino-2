@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif; 
+}
+
+header{
+    min-height: 10vh;
+
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1, ul{
+    font-size: 1.5rem;
+}
+
+nav h1, nav ul{
+    font-size: 1.5rem;
+    flex: 1;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.join{
+    padding: 7px 25px 7px 25px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    background: linear-gradient(to right,  #15b6b6 , #0a9774,  #1ab98f  );
+    background-size: cover;
+}
+
+#home p{
+    font-weight: 350;
+    font-size: larger;
+    padding-right: 500px;
+    color: white;
+}
+
+
+#home h2{
+    font-size: 3rem;
+    padding-right: 50px;
+    color:  #ffd2d2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.what{
+    display: block;
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 236, 236);
+    background: url(./imgs/istockphoto-1177980696-612x612.jpg) no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.d1{
+    flex: 1;
+}
+
+.d2{
+    flex: 1;
+}
+
+.d3{
+    flex: 1;
+}
+
+.what , .mission , .service, .how{
+    margin: 30px 50px 20px 50px;
+    border: 2px solid black;
+    padding: 10px 10px;
+}
+
+.mission, .how{
+    margin-top: 100px;
+}
+
+.jvc{
+    padding-left: 40px;
+    font-size: 3rem;
+}
+
+.what h2, .mission h2, .service h2, .how h2{
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: rgb(28, 202, 202);
+    text-decoration-thickness: 3px;
+}
+
+#events{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.e1,.e2,.e3{
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.e1 h2,.e2 h2,.e3 h2{
+    margin: 20px;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.e1 p,.e2 p,.e3 p{
+    margin: 25px;
+    font-size: larger;
+}
+
+.e1 h4,.e2 h4,.e3 h4{
+    margin: 15px;
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.e1 a,.e2 a,.e3 a{
+    font-size: 1.2rem;
+    margin: 25px;
+    padding: 5px;
+    font-weight: 450;
+    color:#97F0D2;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 25px;
+    margin-top: 40px;
+    padding-right: 25px;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.more{
+   height: 50px;
+   width: 100px;
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+#faqs{
+    background: url(./imgs/background-clean.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+body{
+    font-family: sans-serif;
+}
+
+button.accordian{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background-color 0.2s linear;
+    font-size: 2rem;
+}
+
+button.accordian::after{
+    content: '\f055';
+    font-family: "fontawesome";
+    font-size: 14px;
+    float: right;
+}
+
+button.accordian.is-open::after{
+    content: "\f056";
+}
+
+button.accordian:hover, button.accordian.is-open{
+    background-color: rgb(136, 133, 133);
+}
+
+.accordian-content{
+    padding: 1px 20px;
+    border-left: 0px solid whitesmoke;
+    border-right: 0px solid whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    font-size: 1.3rem;
+}
+
+  
+
+#join{
+    background: url(./imgs/white-background-with-black-line.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+
+}
+
+#join h2{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-weight: 100;
+    
+}
+
+#join p{
+    font-size: larger;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 300;
+}
+#join a{
+    margin-left: 600px;
+    margin-right: 600px;
+    padding-left: 50px;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+
+}
+
+footer{
+    height: 10vh;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
