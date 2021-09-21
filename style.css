@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
 body{
     font-family: 'Nunito', sans-serif; 
+    scroll-behavior: smooth;
 }
 
 header{
@@ -86,6 +93,9 @@ section{
     color: white;
 }
 
+.hid{
+    display: none;
+}
 
 #home h2{
     font-size: 3rem;
@@ -291,15 +301,19 @@ button.accordian:hover, button.accordian.is-open{
     font-weight: 300;
 }
 #join a{
-    margin-left: 600px;
-    margin-right: 600px;
-    padding-left: 50px;
-    margin-top: 100px;
+    margin-left: 70px;
+    margin-top: 50px;
+    padding-left: 20px;
     padding-top: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
     text-decoration: none;
     border: 2px solid black;
     color: black;
+    position: absolute;
+    top: 475%;
+    right: 40vw;
+    
 
 }
 
@@ -425,11 +439,6 @@ footer{
         font-size: 16px;
     }
 
-    #join a{
-        margin-left: 100px;
-        margin-right: 100px;
-        padding-left: 140px;
-    }
 }
 
 
@@ -554,11 +563,7 @@ footer{
         display: none;
     }
 
-    #join a{
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-left: 50px;
-    }
+
 }
 
 
@@ -681,11 +686,7 @@ footer{
         display: none;
     }
 
-    #join a{
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-left: 50px;
-    }
+
 }
 
 
@@ -808,11 +809,6 @@ footer{
         display: none;
     }
 
-    #join a{
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-left: 20px;
-    }
 }
 
 @media screen and (max-width: 307px) {
@@ -936,11 +932,7 @@ footer{
         display: none;
     }
 
-    #join a{
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-left: 10px;
-    }
+
 }
 
 
@@ -1060,11 +1052,7 @@ footer{
         display: none;
     }
 
-    #join a{
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-left: 500px;
-    }
+
 }
 
 
@@ -1189,11 +1177,7 @@ footer{
         display: none;
     }
 
-    #join a{
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-left: 10px;
-    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -1306,12 +1290,246 @@ footer{
     .e3{
         display: none;
     }
-    #join a{
-        margin-left: 40px;
-        margin-right: 40px;
-        padding-left: 300px;
-    }
+
 }
+
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.32rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 15px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.3rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 1rem
+    }
+
+    .e3{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 366px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.32rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 15px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.3rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 1rem
+    }
+
+    .e3{
+        display: none;
+    }
+
+    .hid{
+        display: block;
+    }
+
+    .act{
+        display: none;
+    }
+
+}
+
 
 
 .nav-active{
