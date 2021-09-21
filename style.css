@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -13,6 +14,14 @@ html {
 body{
     font-family: 'Nunito', sans-serif; 
     scroll-behavior: smooth;
+    
+    overflow-y:scroll;
+}
+
+
+.containerm{
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 header{
@@ -75,6 +84,7 @@ section{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
 }
 
 #home{
@@ -84,8 +94,8 @@ section{
     padding-top: 120px;
     background: linear-gradient(to right,  #15b6b6 , #0a9774,  #1ab98f  );
     background-size: cover;
+    scroll-snap-align: start;
 }
-
 #home p{
     font-weight: 350;
     font-size: larger;
@@ -117,6 +127,7 @@ section{
     background-size: cover;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
 }
 
 .d1{
@@ -163,7 +174,7 @@ section{
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    scroll-snap-align: start;
 }
 
 .e1,.e2,.e3{
@@ -302,7 +313,7 @@ button.accordian:hover, button.accordian.is-open{
 }
 #join a{
     margin-left: 70px;
-    margin-top: 50px;
+    margin-top: 70px;
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
